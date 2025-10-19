@@ -1,0 +1,22 @@
+meta {
+  name: post - todos
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/todos
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Aprender Clean Architecture",
+    "description": "Ler e praticar com NestJS"
+  }
+}
+
+settings {
+  encodeUrl: true
+}
